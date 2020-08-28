@@ -30,7 +30,7 @@ Module {
 		description: "OpenMP implementation to be used."
 		allowedValues: ["gomp", "iomp5"]
 	}
-	property string openMPLibrary: "iomp5"
+	property string openMPLibrary: "gomp"
 
 	PropertyOptions {
 		name: "acceleration"
@@ -51,9 +51,10 @@ Module {
 		name: "mm"
 		description: "Mesh manipulation module."
 //		allowedValues: ["prism", "prism_2", "mm_t4", "remesh"]
-		allowedValues: ["prism"]
+		allowedValues: ["prism", "mm_t4"]
 	}
 	property string mm: "mm_t4"
+//	property string mm: "prism"
 
 	PropertyOptions {
 		name: "ap"
@@ -67,7 +68,7 @@ Module {
 		description: "Problem module."
 		allowedValues: ["heat", "ns_supg", "ns_supg_heat"]
 	}
-	property string pd: "heat"
+	property string pd: "ns_supg_heat"
 
 	PropertyOptions {
 		name: "mkbDirectSolver"
