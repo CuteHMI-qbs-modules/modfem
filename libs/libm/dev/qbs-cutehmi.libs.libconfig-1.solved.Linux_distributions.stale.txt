@@ -1,3 +1,4 @@
+
 Problem:
 
 GitLab CI uses Docker images of various Linux distributions. Problem is that
@@ -10,3 +11,7 @@ Unless packages are upgraded deprecated features such as "pathPrefixes" have to
 be used.
 
 Snippet:
+
+Solution:
+
+Most distributions have now new versions of Qbs.
